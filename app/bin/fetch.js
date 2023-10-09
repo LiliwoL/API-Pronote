@@ -3,7 +3,7 @@
 /* eslint no-console: off */
 
 const fs = require('fs').promises;
-const pronote = require('..');
+const pronote = require('../index');
 
 if (process.argv.length < 5) {
     console.log('Syntax: pronote-fetch <URL> <username> <password> [cas(ex: none)] [AccountType (ex: Student)]');

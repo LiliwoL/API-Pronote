@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  api-pronote:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nodejs
+    container_name: api-pronote
+    #restart: unless-stopped
+    env_file: .env
+    #environment:
+    ports:
+      - "800:21727"
+    volumes:
+      - ./app:/usr/src/app
+      - node_modules:/usr/src/app/node_modules
+    networks:
+      - app-api-pronote
+
+networks:
+  app-api-pronote:
+    driver: bridge
+
+volumes:
+  dbdata:
+  node_modules:

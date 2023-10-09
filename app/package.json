@@ -9,10 +9,10 @@
         "node": ">=14.0.0"
     },
     "scripts": {
-        "start": "node ./bin/server.js",
-        "lint": "eslint src/* bin/* index.js",
-        "check": "eslint --fix src/* bin/* index.js",
-        "test": "eslint src/* bin* index.js && node ./bin/test.js"
+        "start": "node bin/server.js",
+        "lint": "eslint app/src/* app/bin/* index.js",
+        "check": "eslint --fix app/src/* app/bin/* index.js",
+        "test": "eslint app/src/* bin* index.js && node app/bin/test.js"
     },
     "keywords": [
         "pronote",
@@ -27,8 +27,8 @@
         "type": "git"
     },
     "bin": {
-        "pronote-api-server": "./bin/server.js",
-        "pronote-fetch": "./bin/fetch.js"
+        "pronote-api-server": "bin/server.js",
+        "pronote-fetch": "bin/fetch.js"
     },
     "dependencies": {
         "axios": "^0.26.1",

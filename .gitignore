@@ -1,6 +1,6 @@
 /.idea
 /node_modules
-/src/cas/debug.js
+/app/src/cas/debug.js
 /*result.json
 pnpm-lock.yaml
 yarn.lock

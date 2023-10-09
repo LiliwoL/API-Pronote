@@ -1,9 +1,8 @@
+
 # ce fork ajoute :
 ### messagerie() : liste les discussions dans la messagerie. retourne entre-autre ConversationId
 ### message(ConversationId) : récupère une discussions de la messagerie.
 ### TODO : utilisé withId() pour message() et messagerie()
-</br>
-</br>
 
 ## Pronote API - LISEZ MOI ABSOLUMENT
 
